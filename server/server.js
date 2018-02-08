@@ -1,7 +1,8 @@
-const _ = require('lodash');
+require('./config/config');
 
+const _ = require('lodash');
 const express = require('express');
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 var {mongoose} = require('./db/mongoose');
 var {Todo} = require('./models/todo');
